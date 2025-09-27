@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards - MR.COFFEE</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MR.COFFEE</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rewards.html" class="nav-link active">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="order.html" class="nav-link">Order</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Download Apps Section -->
+    <section class="download-apps">
+        <div class="container">
+            <h1 class="page-title">Download Our App</h1>
+            <p class="download-description">Get exclusive rewards and order ahead with the MR.COFFEE mobile app!</p>
+            <div class="app-buttons">
+                <button class="app-btn playstore" onclick="showDownloadModal()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store">
+                </button>
+                <button class="app-btn appstore" onclick="showDownloadModal()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section class="rewards-list">
+        <div class="container">
+            <h2 class="section-title">Available Rewards</h2>
+            <div class="rewards-grid">
+                <div class="reward-card">
+                    <img src="images/buy5get1.jpg" alt="Buy 5 Get 1 Free">
+                    <div class="reward-content">
+                        <h3>Buy 5 Get 1 Free</h3>
+                        <p>Collect 5 stamps and get your 6th coffee absolutely free! Perfect for our regular customers who love their daily brew.</p>
+                        <button class="claim-btn" onclick="showDownloadModal()">Claim Reward</button>
+                    </div>
+                </div>
+                
+                <div class="reward-card">
+                    <img src="images/happyhour.jpg" alt="Happy Hour">
+                    <div class="reward-content">
+                        <h3>Happy Hour Special</h3>
+                        <p>Enjoy 25% off all espresso drinks between 2-4 PM on weekdays. The perfect afternoon pick-me-up at an amazing price!</p>
+                        <button class="claim-btn" onclick="showDownloadModal()">Claim Reward</button>
+                    </div>
+                </div>
+                
+                <div class="reward-card">
+                    <img src="images//birthday.jpg" alt="Birthday Treat">
+                    <div class="reward-content">
+                        <h3>Birthday Treat</h3>
+                        <p>Celebrate your special day with a free pastry and coffee combo. Because birthdays deserve the best treats!</p>
+                        <button class="claim-btn" onclick="showDownloadModal()">Claim Reward</button>
+                    </div>
+                </div>
+                
+                <div class="reward-card">
+                    <img src="images/student.jpg" alt="Student Discount">
+                    <div class="reward-content">
+                        <h3>Student Discount</h3>
+                        <p>Show your student ID and get 15% off your entire order. Fuel your studies with premium coffee at student-friendly prices.</p>
+                        <button class="claim-btn" onclick="showDownloadModal()">Claim Reward</button>
+                    </div>
+                </div>
+                
+                <div class="reward-card">
+                    <img src="images/weekend.jpg" alt="Weekend Warrior">
+                    <div class="reward-content">
+                        <h3>Weekend Warrior</h3>
+                        <p>Double stamps on weekends! Earn rewards faster while enjoying your leisurely weekend coffee moments.</p>
+                        <button class="claim-btn" onclick="showDownloadModal()">Claim Reward</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Download MR.COFFEE App</h3>
+            <p>To claim this reward, please download our mobile app from your device's app store.</p>
+            <div class="modal-buttons">
+                <button class="modal-btn" onclick="closeModal()">Close</button>
+                <button class="modal-btn primary" onclick="closeModal()">Download App</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MR.COFFEE</h3>
+                    <p>Where every cup tells a story</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="rewards.html">Rewards</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Jl. Anggrek No.7, Kota Jakarta Barat, 11540<br>Phone: 0812-3456-7890<br>Email: mrcoffee@gmail.com<br></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MR.COFFEE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

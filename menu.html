@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - MR.COFFEE</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MR.COFFEE</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rewards.html" class="nav-link">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link active">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="order.html" class="nav-link">Order</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Page -->
+    <section class="menu-page">
+        <div class="container">
+            <h1 class="page-title">Our Menu</h1>
+            
+            <!-- Menu Filter Bar -->
+            <div class="menu-filter">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="espresso">Espresso</button>
+                <button class="filter-btn" data-category="frappe">Frappe</button>
+                <button class="filter-btn" data-category="brewed">Brewed</button>
+                <button class="filter-btn" data-category="bread">Bread & Pastries</button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Espresso Items -->
+                <div class="menu-item" data-category="espresso">
+                    <img src="images/espresso.jpg" alt="Signature Espresso">
+                    <div class="menu-item-content">
+                        <h3>Signature Espresso</h3>
+                        <p>Rich, bold espresso shot from our premium mountain beans</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="espresso">
+                    <img src="images/vanilla-latte.jpg" alt="Vanilla Latte">
+                    <div class="menu-item-content">
+                        <h3>Vanilla Latte</h3>
+                        <p>Smooth espresso with steamed milk and vanilla syrup</p>
+                        <span class="price">$5.25</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="espresso">
+                    <img src="images/classic-cappucinno.jpg" alt="Cappuccino">
+                    <div class="menu-item-content">
+                        <h3>Classic Cappuccino</h3>
+                        <p>Perfect balance of espresso, steamed milk, and foam</p>
+                        <span class="price">$4.75</span>
+                    </div>
+                </div>
+
+                <!-- Frappe Items -->
+                <div class="menu-item" data-category="frappe">
+                    <img src="images/caramel-frappe.jpg" alt="Caramel Frappe">
+                    <div class="menu-item-content">
+                        <h3>Caramel Frappe</h3>
+                        <p>Iced coffee blended with caramel and topped with whipped cream</p>
+                        <span class="price">$5.75</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="frappe">
+                    <img src="images/mocha-frappe.jpg" alt="Mocha Frappe">
+                    <div class="menu-item-content">
+                        <h3>Chocolate Mocha Frappe</h3>
+                        <p>Rich chocolate and coffee blend with ice and cream</p>
+                        <span class="price">$6.00</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="frappe">
+                    <img src="images/vanilla-frappe.jpg" alt="Vanilla Frappe">
+                    <div class="menu-item-content">
+                        <h3>Vanilla Bean Frappe</h3>
+                        <p>Creamy vanilla frappe with real vanilla bean specks</p>
+                        <span class="price">$5.50</span>
+                    </div>
+                </div>
+
+                <!-- Brewed Items -->
+                <div class="menu-item" data-category="brewed">
+                    <img src="images/v60.jpg" alt="Mountain Brew">
+                    <div class="menu-item-content">
+                        <h3>V60 Pour Over</h3>
+                        <p>A clean and bright filter coffee that highlights the unique flavors of single origin beans.</p>
+                        <span class="price">$4.25</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="brewed">
+                    <img src="images/french-press.jpg" alt="French Press">
+                    <div class="menu-item-content">
+                        <h3>French Press</h3>
+                        <p>Full-bodied coffee brewed to perfection</p>
+                        <span class="price">$4.75</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="brewed">
+                    <img src="images/cold-brew.jpg" alt="Cold Brew">
+                    <div class="menu-item-content">
+                        <h3>Cold Brew</h3>
+                        <p>Smooth, refreshing cold-brewed coffee</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+
+                <!-- Bread & Pastries -->
+                <div class="menu-item" data-category="bread">
+                    <img src="images/croissant.jpg" alt="Artisan Croissant">
+                    <div class="menu-item-content">
+                        <h3>Artisan Croissant</h3>
+                        <p>Buttery, flaky croissant baked fresh daily</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bread">
+                    <img src="images/blueberry-muffin.jpg" alt="Blueberry Muffin">
+                    <div class="menu-item-content">
+                        <h3>Blueberry Muffin</h3>
+                        <p>Moist muffin packed with fresh blueberries</p>
+                        <span class="price">$3.25</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bread">
+                    <img src="images/chocolate-cookies.jpg" alt="Chocolate Chip Cookie">
+                    <div class="menu-item-content">
+                        <h3>Chocolate Chip Cookie</h3>
+                        <p>Freshly baked cookie with premium chocolate chips</p>
+                        <span class="price">$2.75</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Button -->
+            <div class="order-section">
+                <button class="order-btn" onclick="window.location.href='order.html'">Place Your Order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MR.COFFEE</h3>
+                    <p>Where every cup tells a story</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="rewards.html">Rewards</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Jl. Anggrek No.7, Kota Jakarta Barat, 11540<br>Phone: 0812-3456-7890<br>Email: mrcoffee@gmail.com<br></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MR.COFFEE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - MR.COFFEE</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MR.COFFEE</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rewards.html" class="nav-link">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="order.html" class="nav-link active">Order</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Form Section -->
+    <section class="order-page">
+        <div class="container">
+            <h1 class="page-title">Place Your Order</h1>
+            
+            <form id="orderForm" class="order-form">
+                <!-- Customer Information -->
+                <div class="form-section">
+                    <h3>Customer Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="customerName">Full Name *</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerEmail">Email Address *</label>
+                        <input type="email" id="customerEmail" name="customerEmail" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerAddress">Delivery Address *</label>
+                        <textarea id="customerAddress" name="customerAddress" rows="3" required></textarea>
+                        <span class="error-message" id="addressError"></span>
+                    </div>
+                </div>
+
+                <!-- Order Details -->
+                <div class="form-section">
+                    <h3>Order Details</h3>
+                    
+                    <div class="form-group">
+                        <label for="orderItems">Select Items *</label>
+                        <select id="orderItems" name="orderItems" multiple required>
+                            <option value="espresso-4.50">Signature Espresso - $4.50</option>
+                            <option value="latte-5.25">Vanilla Latte - $5.25</option>
+                            <option value="cappuccino-4.75">Classic Cappuccino - $4.75</option>
+                            <option value="frappe-5.75">Caramel Frappe - $5.75</option>
+                            <option value="mocha-6.00">Chocolate Mocha Frappe - $6.00</option>
+                            <option value="vanilla-5.50">Vanilla Bean Frappe - $5.50</option>
+                            <option value="mountain-4.25">V60 Pour Over - $4.25</option>
+                            <option value="french-4.75">French Press - $4.75</option>
+                            <option value="cold-4.50">Cold Brew = $4.50</option>
+                            <option value="croissant-3.50">Artisan Croissant - $3.50</option>
+                            <option value="muffin-3.25">Blueberry Muffin - $3.25</option>
+                            <option value="cookie-2.75">Chocolate Chip Cookie - $2.75</option>
+                        </select>
+                        <span class="error-message" id="itemsError"></span>
+                        <small>Hold Ctrl (Cmd on Mac) to select multiple items</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Add-ons</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="addons" value="extrashot-1.00"> Extra Shot (+$1.00)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="addons" value="extrafoam-0.50"> Extra Foam (+$0.50)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="addons" value="soymilk-0.75"> Soy Milk (+$0.75)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="addons" value="extrahot-0.00"> Extra Hot (Free)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deliveryTime">Preferred Delivery Time</label>
+                        <input type="time" id="deliveryTime" name="deliveryTime">
+                        <span class="error-message" id="timeError"></span>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="form-section">
+                    <h3>Order Summary</h3>
+                    <div class="order-summary">
+                        <div class="summary-line">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Add-ons:</span>
+                            <span id="addonsTotal">$0.00</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Delivery Fee:</span>
+                            <span id="deliveryFee">$2.50</span>
+                        </div>
+                        <div class="summary-line total">
+                            <span>Total Price:</span>
+                            <span id="totalPrice">$2.50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Place Order</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Order Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <h3>Order Confirmed!</h3>
+            <p>Thank you for your order! We'll prepare your coffee with love and deliver it to you soon.</p>
+            <div class="modal-buttons">
+                <button class="modal-btn primary" onclick="closeConfirmationModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MR.COFFEE</h3>
+                    <p>Where every cup tells a story</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="rewards.html">Rewards</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Jl. Anggrek No.7, Kota Jakarta Barat, 11540<br>Phone: 0812-3456-7890<br>Email: mrcoffee@gmail.com<br></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MR.COFFEE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
